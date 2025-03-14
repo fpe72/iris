@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 10px;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+#question {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.02);
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-group p {
+  margin: 0 0 5px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ffcc00;
+  border-radius: 8px;
+  background: #333;
+  color: #f8f8f8;
+  font-size: 1rem;
+  outline: none;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  margin: 10px 5px;
+  width: 100%;
+}
+
+button:hover {
+  transform: scale(1.02);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+#checkButton {
+  background: #28a745;
+  color: #fff;
+}
+
+#checkButton:hover {
+  background: #218838;
+}
+
+#next {
+  background: #007bff;
+  color: #fff;
+}
+
+#next:hover {
+  background: #0069d9;
+}
+
+#restart {
+  background: #dc3545;
+  color: #fff;
+}
+
+#restart:hover {
+  background: #c82333;
+}
+
+#score,
+#attempts {
+  font-size: 1.2rem;
+  margin-top: 15px;
+}
+
+#message {
+  font-size: 1.1rem;
+  margin: 15px 0;
+  font-weight: 700;
+}
+
+/* Ajustes para móviles */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  #question {
+    font-size: 1rem;
+  }
+  .input-group p {
+    font-size: 0.9rem;
+  }
+  input[type="text"] {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+  button {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+  #score,
+  #attempts {
+    font-size: 1rem;
+  }
+  #message {
+    font-size: 1rem;
+  }
+}
