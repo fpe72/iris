@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Juego de Capitales de Europa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Vinculación al archivo CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎯 Juego de Capitales de Europa 🌍</h1>
+    <p id="question">Observa la imagen y responde:</p>
+    <img id="cityImage" src="" alt="Imagen de la ciudad">
+    
+    <div class="input-group">
+      <p>¿Qué ciudad es?</p>
+      <input type="text" id="cityAnswer" placeholder="Nombre de la ciudad">
+    </div>
+    
+    <div class="input-group">
+      <p>¿De qué país es capital?</p>
+      <input type="text" id="countryAnswer" placeholder="Nombre del país">
+    </div>
+    
+    <button id="checkButton">✅ Responder</button>
+    <button id="next" style="display: none;">➡️ Siguiente pregunta</button>
+    
+    <p id="score">⭐ Puntuación: 0</p>
+    <p id="attempts">❌ Intentos restantes: 3</p>
+    <p id="message"></p>
+    <button id="restart" style="display: none;">🔄 Reiniciar</button>
+    
+    <!-- Copyright -->
+    <div class="footer-right">
+      &copy; Fernando Palacios Estañ 2025, todos los derechos reservados.
+    </div>
+  </div>
+
+  <!-- Vinculación al archivo JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
